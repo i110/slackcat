@@ -1,4 +1,4 @@
-module github.com/bcicen/slackcat
+module github.com/i110/slackcat
 
 go 1.16
 
