@@ -94,7 +94,7 @@ var CurMsgTS string
 func (sc *Slackcat) postMsg(msglines []string) {
 	msg := strings.Join(msglines, "\n")
 
-	msgOpts := []slack.MsgOption{slack.MsgOptionText(msg, true)}
+	msgOpts := []slack.MsgOption{slack.MsgOptionText(msg, false)}
 	if sc.username != "" {
 		msgOpts = append(msgOpts, slack.MsgOptionAsUser(false))
 		msgOpts = append(msgOpts, slack.MsgOptionUsername(sc.username))
